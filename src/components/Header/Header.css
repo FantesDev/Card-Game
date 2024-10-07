@@ -1,0 +1,15 @@
+/* src/components/Header/Header.css */
+
+.header {
+    background-color: #4a4a4a; /* Cor de fundo do cabeçalho */
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff; /* Texto branco */
+  }

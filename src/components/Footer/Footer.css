@@ -1,0 +1,11 @@
+/* src/components/Footer/Footer.css */
+
+footer {
+    background-color: #4a4a4a; /* Cor de fundo do rodapé */
+    padding: 20px;
+    width: 100%;
+    color: #ffffff; /* Texto branco */
+   display: flex;
+   justify-content: center;
+  }
+  
