@@ -1,41 +1,63 @@
+.card-display {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
 
-  
-  .card-display {
-    display: flex;
-    justify-content: center;   /* Centraliza a carta na tela */
-    padding: 20px;            /* Espaço interno ao redor das cartas */
-    width: 100%;              /* Ocupar a largura total */
-  }
-  
-  .card {
-    min-width: 100px;         /* Largura mínima da carta */
-    height: 150px;            /* Altura da carta */
-    margin: 0 10px;           /* Espaço entre as cartas */
-    background-color: #ffffff; /* Fundo da carta */
-    color: #000;              /* Texto preto */
-    border-radius: 10px;      /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-    display: flex;            /* Usado para centralizar conteúdo */
-    align-items: center;      /* Centraliza verticalmente */
-    justify-content: center;  /* Centraliza horizontalmente */
-    font-size: 1.2em;         /* Tamanho da fonte */
-    transition: transform 0.2s; /* Transição suave ao passar o mouse */
-  }
-  
-  .carousel-button {
-    background-color: #61dafb; /* Cor do botão */
-    color: #282c34;            /* Texto escuro */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;        /* Bordas arredondadas do botão */
-    cursor: pointer;           /* Cursor em forma de mão */
-    margin: 20px;              /* Espaço entre o botão e as cartas */
-  }
-  
-  
-  .button-container {
-    display: flex;             /* Usado para alinhar os botões na horizontal */
-    justify-content: center;   /* Centraliza os botões */
-    margin: 20px 0;           /* Margem ao redor dos botões */
-  }
-  
+.card {
+  width: 120px;
+  height: 180px;
+  margin: 10px;
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card-text {
+  margin-top: 10px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.carousel-button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.carousel-button:hover {
+  background-color: #52c3d8;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #ffffff;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
