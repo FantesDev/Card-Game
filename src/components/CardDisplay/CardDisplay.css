@@ -1,63 +1,95 @@
 .card-display {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  width: 100%;
-}
-
-.card {
-  width: 120px;
-  height: 180px;
-  margin: 10px;
-  background-color: #ffffff;
-  color: #000;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.card img {
-  width: 100px;
-  height: auto;
-  border-radius: 5px;
-}
-
-.card-text {
-  margin-top: 10px;
-  font-size: 1em;
   text-align: center;
-}
-
-.carousel-button {
-  background-color: #61dafb;
-  color: #282c34;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 10px;
-}
-
-.carousel-button:hover {
-  background-color: #52c3d8;
-}
-
-.button-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+.regras_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  & ul{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.card-wrapper {
   margin: 20px 0;
 }
 
-h2 {
-  color: #ffffff;
+.card-group {
+  display: flex;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
-p {
-  color: #ffffff;
-  font-size: 1.2em;
+.single-card {
+  margin: 0 10px;
+}
+
+.button-container {
   margin-top: 20px;
 }
+
+.carousel-button {
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+@media (max-width: 768px) {
+  .card-wrapper {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* Mantém as cartas em linha */
+    gap: 10px; /* Espaço entre as cartas */
+  }
+
+  .single-card img {
+    width: 80px; /* Reduz o tamanho da imagem para telas menores */
+  }
+
+  .card-text {
+    font-size: 14px; /* Reduz o tamanho do texto */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-wrapper {
+    justify-content: center;
+    flex-wrap: nowrap; /* As cartas quebram para novas linhas */
+  }
+
+  .single-card {
+    margin: 5px;
+    flex-direction: row; /* O título ficará abaixo da imagem */
+    align-items: center;
+    text-align: center;
+  }
+
+  .single-card img {
+    width: 60px; /* Reduz ainda mais o tamanho da imagem */
+  }
+
+  .card-text {
+    font-size: 12px; /* Reduz o tamanho do texto em telas menores */
+  }
+
+  .button-container {
+    flex-direction: row; /* Botões empilhados */
+    align-items: center;
+    margin-top: -10px;
+  }
+  .nome_carta,.valor_carta{
+    font-size: 10px;
+  }
+.conjunto_regras {
+font-size: 12px;
+}
+
+  .carousel-button {
+    width: 100%;
+    padding: 8px 12px; /* Botões menores em dispositivos pequenos */
+  }
+}
+
+
