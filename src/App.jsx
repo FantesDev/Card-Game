@@ -1,9 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Importando o Router e as rotas
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import './App.css';
 import Header from './components/Header/Header';
 import CardGame from './components/CardGame/CardGame';
-import CardDisplay from './components/CardDisplay/CardDisplay'; // Certifique-se de que o caminho está correto
+import CardDisplay from './components/CardDisplay/CardDisplay'; 
 import Footer from './components/Footer/Footer';
 import FeedbackPage from './components/FeedBackpage/FeedbackPage';
 import SearchPage from './components/SearchPage/SearchPage';

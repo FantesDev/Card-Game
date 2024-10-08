@@ -40,42 +40,42 @@
   .card-wrapper {
     justify-content: center;
     align-items: center;
-    flex-direction: row; /* Mantém as cartas em linha */
-    gap: 10px; /* Espaço entre as cartas */
+    flex-direction: row; 
+    gap: 10px; 
   }
 
   .single-card img {
-    width: 80px; /* Reduz o tamanho da imagem para telas menores */
+    width: 80px; 
   }
 
   .card-text {
-    font-size: 14px; /* Reduz o tamanho do texto */
+    font-size: 14px; 
   }
 }
 
 @media (max-width: 480px) {
   .card-wrapper {
     justify-content: center;
-    flex-wrap: nowrap; /* As cartas quebram para novas linhas */
+    flex-wrap: nowrap; 
   }
 
   .single-card {
     margin: 5px;
-    flex-direction: row; /* O título ficará abaixo da imagem */
+    flex-direction: row; 
     align-items: center;
     text-align: center;
   }
 
   .single-card img {
-    width: 60px; /* Reduz ainda mais o tamanho da imagem */
+    width: 60px; 
   }
 
   .card-text {
-    font-size: 12px; /* Reduz o tamanho do texto em telas menores */
+    font-size: 12px; 
   }
 
   .button-container {
-    flex-direction: row; /* Botões empilhados */
+    flex-direction: row; 
     align-items: center;
     margin-top: -10px;
   }
@@ -88,7 +88,7 @@ font-size: 12px;
 
   .carousel-button {
     width: 100%;
-    padding: 8px 12px; /* Botões menores em dispositivos pequenos */
+    padding: 8px 12px; 
   }
 }
 

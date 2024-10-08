@@ -1,7 +1,6 @@
-/* src/components/Header/Header.css */
 
 .header {
-    background-color: #4a4a4a; /* Cor de fundo do cabeçalho */
+    background-color: #4a4a4a; 
     padding: 20px;
     width: 100%;
     display: flex;
@@ -11,5 +10,5 @@
   .logo {
     font-size: 1.5em;
     font-weight: bold;
-    color: #ffffff; /* Texto branco */
+    color: #ffffff; 
   }

@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   margin: 20px 0;
-  flex-wrap: wrap; /* Permite que as cartas quebrem para novas linhas em telas pequenas */
+  flex-wrap: wrap; 
 }
 
 .card-display {
@@ -29,7 +29,7 @@
   margin-bottom: 10px;
 }
 
-/* Animação de flip para a carta */
+
 @keyframes flip {
   0% {
     transform: rotateY(90deg);
@@ -140,30 +140,30 @@
 /* Responsividade */
 @media (max-width: 768px) {
   .card-wrapper {
-    flex-direction: column; /* Empilha as cartas em telas menores */
+    flex-direction: column; 
   }
 
   .card img {
-    width: 120px; /* Reduz o tamanho da imagem da carta */
+    width: 120px;
   }
 
   .carousel-button {
-    padding: 8px 16px; /* Reduz o tamanho do botão */
-    font-size: 14px; /* Reduz a fonte do botão */
+    padding: 8px 16px; 
+    font-size: 14px; 
   }
 
   .card-text {
-    font-size: 14px; /* Diminui o tamanho da fonte das cartas */
+    font-size: 14px;
   }
 }
 
 @media (max-width: 480px) {
   .card-wrapper {
-    flex-direction: row; /* Empilha as cartas em telas menores */
+    flex-direction: row; 
   }
   .pontos,.vidas {
     font-size: 1.2em; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra para mais destaque */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
   }
   
  .pergunta{
@@ -172,19 +172,18 @@
   font-weight: bolder;
  }
   .card img {
-    width: 100px; /* Tamanho ainda menor para telas muito pequenas */
+    width: 100px; 
   }
-
   .carousel-button {
-    padding: 6px 12px; /* Botões menores em dispositivos móveis */
+    padding: 6px 12px; 
     font-size: 12px;
   }
 
   .card-text {
-    font-size: 12px; /* Diminui mais a fonte das cartas */
+    font-size: 12px; 
   }
 
   .button-container {
-    margin: 10px 0; /* Reduz a margem dos botões */
+    margin: 10px 0; 
   }
 }

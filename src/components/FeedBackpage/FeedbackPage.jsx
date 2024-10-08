@@ -12,7 +12,7 @@ const Feedback = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aqui você pode implementar a lógica para enviar o feedback
+    
     setSubmitted(true);
   };
 

@@ -53,9 +53,9 @@ const CardDisplay = () => {
 
   // Cria uma lista de grupos de 3 cartas
   const cardGroups = suits.flatMap(suit => {
-    const suitCards = sortCards(groupedCards[suit]); // Ordena as cartas por valor
+    const suitCards = sortCards(groupedCards[suit]); 
     const groups = [];
-    for (let i = 0; i < suitCards.length; i += 3) { // Agrupando 3 cartas
+    for (let i = 0; i < suitCards.length; i += 3) { 
       groups.push(suitCards.slice(i, i + 3));
     }
     return groups.map(group => ({ suit, cards: group }));
